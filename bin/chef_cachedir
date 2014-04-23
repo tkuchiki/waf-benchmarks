@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'chef'
+
+abort "Requires root privileges." if ENV['USER'] != "root"
+
+path = Chef::Config[:file_cache_path]
+FileUtils.mkdir_p(path, {:mode => 0777}) unless FileTest.exist?(path)
