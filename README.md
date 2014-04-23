@@ -3,14 +3,16 @@ waf-benchmarks
 
 Benchmark of web application frameworks
 
-# Create chef cache dir
-
-Execute `sudo ./bin/chef_cachedir`.
-
 # Bundle install
 
 ~~~~
 bundle install --path=vendor/bundle --binstubs=vendor/bin
+~~~~
+
+# Create chef cache dir
+
+~~~~
+sudo bundle exec ./bin/chef_cachedir
 ~~~~
 
 # Run chef-solo
