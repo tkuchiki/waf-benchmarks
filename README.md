@@ -7,9 +7,15 @@ Benchmark of web application frameworks
 
 Execute `sudo ./bin/chef_cachedir`.
 
+# Bundle install
+
+~~~~
+bundle install --path=vendor/bundle --binstubs=vendor/bin
+~~~~
+
 # Run chef-solo
 
 ~~~~
-chef-solo -c /path/to/chef/solo.rb COOKBOOK
-chef-solo -c /path/to/chef/solo.rb -j /path/to/chef/nodes/localhost.json
+bundle exec chef-solo -c /path/to/chef/solo.rb COOKBOOK
+bundle exec chef-solo -c /path/to/chef/solo.rb -j /path/to/chef/nodes/localhost.json
 ~~~~
