@@ -1,0 +1,3 @@
+file_cache_path Chef::Config[:file_cache_path]
+cookbook_path   "#{File.expand_path(File.dirname(__FILE__))}/cookbooks"
+verbose_logging false
