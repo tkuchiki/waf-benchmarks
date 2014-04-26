@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+abort "Requires root privileges." if ENV['USER'] != "root"
+
+`nginx -c #{File.expand_path(File.dirname(File.dirname(__FILE__)))}/config/nginx/nginx.conf`
+

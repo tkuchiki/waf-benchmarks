@@ -2,5 +2,6 @@ tools/wrk
 !tools/.gitkeep
 config/*/*
 !config/*/.gitkeep
+var/
 vendor
 .bundle

@@ -3,6 +3,16 @@
   "override_attributes": {
   },
   "default_attributes": {
+    "nginx": {
+      "vhosts": [
+        {
+          "rails": {
+            "sock_name": "unicorn_sock",
+            "sock_dir":  "Rails/benchmark/tmp/sockets"
+          }
+        }
+      ]
+    }
   },
   "json_class": "Chef::Role",
   "chef_type": "role",

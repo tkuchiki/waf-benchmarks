@@ -3,3 +3,5 @@ cookbook_path   "#{File.expand_path(File.dirname(__FILE__))}/cookbooks"
 role_path       "#{File.expand_path(File.dirname(__FILE__))}/roles"
 verbose_logging false
 ssl_verify_mode :verify_peer
+
+ENV['PROJECT_ROOT'] = File.dirname("#{File.expand_path(File.dirname(__FILE__))}")
